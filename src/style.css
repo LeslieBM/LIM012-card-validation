@@ -1,18 +1,46 @@
+.section {
+  color: cornflowerblue;
+  line-height: 30%;
+  font-family: Segoe UI;
+  line-height: 50%;
+}
 .title {
     text-align: center;
   padding: 60px;
-  font-size: 50px;
+  font-size: 60px;
+  color: maroon;
+  line-height: 50%;
 }
-.enter {
-    text-align: justify;
+.enterdates {
+    text-align: left;
   padding: 20px;
   font-size: 40px;
 }
 .text {
-    text-align: justify;
+    text-align: left;
   padding: 20px;
   font-size: 30px;
+  line-height: 10%
 }
 .textbox {
-
+  width: 350px;
+  margin:auto;
+}
+#verify {
+  padding: 10px 6px;
+  margin: 2px 0px; 
+  width: 10%;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+  border-radius: 8px;
+  text-align: center;
+}
+.typecard {
+  text-decoration: underline;
+  text-align: center;
+  line-height: 25px;
+  margin: 2px 0px; 
+  width: 10%;
 }

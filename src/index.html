@@ -2,13 +2,39 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
+    <title>Proyecto Tarjeta de Crédito</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>Hola Mundo</header>
-    <main></main>
-    <footer></footer>
+     <!-- Sección Bienvenida -->
+  <div class="section" id="startpage" style="display:none">
+    <div class="title">Online Boutique</div>
+    <div class= "text">Visita el mejor catálogo de ropa y accesorios para dama</div>
+    <div class= "slogan">Elegancia y estilo al alcance de un click</div>
+    <button type="button" id="btn">Visítanos</button>
+  </div>
+        <!-- Sección de Ingreso -->
+  <div class="section" id="entercard" >
+    <div class= "title">Verifica tu tarjeta</div>
+    <div class= "enterdates">Ingresa tus datos</div>
+    <div class= "text">Nombre
+      <input type="text" class="textbox" id="textbox"/>
+    </div>
+    <div class= "text">Nro. de tarjeta
+      <input type="number" class= "textbox" id="creditcard" maxlength="16"/>
+      <button type="button" id="verify">Verificar</button>
+    </div>
+    <div>
+      <ul>
+        <li class="typecard"> VISA</li>
+        <li class="typecard"> MATERCARD </li>
+      </ul>
+    
+    </div>
+     
+  </div>
+  
     <script src="index.js" type="module"></script>
   </body>
 </html>
