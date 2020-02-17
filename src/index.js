@@ -14,13 +14,15 @@ import validator from './validator.js';
 
 function getCreditCardNumber() {
   const numberCard = document.getElementById("creditcard").value;
-  let nombreInvertido = '';
+  let invertedNumber = "";
 
   for(let i= numberCard.length-1 ; i >= 0; i--){
-    nombreInvertido = nombreInvertido + numberCard[i];
+    invertedNumber = invertedNumber + numberCard[i];
     }
-    let convertirNumero = parseInt(nombreInvertido,10);
-    console.log(nombreInvertido);
+    const arreglo = [];
+    arreglo.push(invertedNumber);
+    let newArray = invertedNumber.split("");
+    console.log(newArray);
 }
     
   const button = document.getElementById("verify");
