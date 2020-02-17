@@ -16,20 +16,29 @@ function getCreditCardNumber() {
   const numberCard = document.getElementById("creditcard").value;
   let invertedNumber = "";
 
-  for(let i= numberCard.length-1 ; i >= 0; i--){
+  for(let i = numberCard.length-1 ; i >= 0; i--){
     invertedNumber = invertedNumber + numberCard[i];
     }
-    const arreglo = [];
-    arreglo.push(invertedNumber);
-    let newArray = invertedNumber.split("");
-    console.log(newArray);
+    const newArray = Array.from(invertedNumber).map(Number);
+    console.log(newArray)
+
+    let numberCardList = [];
+
+    for(let i=0; i < newArray.length; i++){
+      if(i%2!==0){
+        numberCardList.push(newArray[i]*2);
+      }else{
+        numberCardList.push(newArray[i]*1);
+      }
+    }
+    console.log("Pares multiplicados por 2", numberCardList)
+
+
 }
     
+
+  
   const button = document.getElementById("verify");
   button.addEventListener("click",getCreditCardNumber,false);
-
- //Pasar los números a un array en orden inverso
- 
-
 
 
