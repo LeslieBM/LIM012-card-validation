@@ -44,3 +44,9 @@
   margin: 2px 0px; 
   width: 10%;
 }
+.ocultar{
+  display:none;
+}
+.mostrar{
+  display:block;
+}

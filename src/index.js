@@ -3,15 +3,15 @@ import validator from './validator.js';
     console.log(validator);
 
 // Inicia la sección
-//function start(){
-//document.getElementById("startpage").style.display = "none";
-//document.getElementById("entercard").style.display = "block";
-//}
-//const btn = document.getElementById("btn");
-//enter.addeventlistener("click",start,false);
+  const enter = document.getElementById("btn");
+  const startSection = document.getElementById("startpage");
+  enter.addEventListener("click",()=>{
+    startSection.classList.add("ocultar");
+  });
+  const sectionCard = document.getElementById("entercard");
+  sectionCard.classList.add("ocultar");
 
 // Solicitar Número de la Tarjeta
-
 function getCreditCardNumber() {
   let numberCard = document.getElementById("creditcard").value;
   let invertedNumber = "";
@@ -55,30 +55,25 @@ function getCreditCardNumber() {
     if(numberCardSum%10===0){
         validation = true;
       }
-}//console.log(validation);
+      console.log(validation);
+}
 
 function maskify(){
   
   let numberCard2 = document.getElementById("creditcard").value;
-  const numberCardMask = Array.from(numberCard2).map(Number);
-  console.log(numberCardMask);
-  
   let numbers = "";
 
-  for(i=0;i<numberCardMask.length;i++){
-    if(i>11){
-      numbers = numbers + numberCardMask[i];
-    }else{
+  for(let i=0; i<numberCard2.length; i++){
+
+    if(i<= numberCard2.length - 5 ){
       numbers = numbers + "#";
+    }else{
+      numbers = numbers + numberCard2[i]*1;
     } 
-    } 
+  } 
     console.log(numbers);
 }
 
-
-
-
-    
   const button = document.getElementById("verify");
-  //button.addEventListener("click",getCreditCardNumber);
+  button.addEventListener("click",getCreditCardNumber,false);
   button.addEventListener("click",maskify,false)
