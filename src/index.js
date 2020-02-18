@@ -13,15 +13,16 @@ import validator from './validator.js';
 // Solicitar Número de la Tarjeta
 
 function getCreditCardNumber() {
-  const numberCard = document.getElementById("creditcard").value;
+  let numberCard = document.getElementById("creditcard").value;
   let invertedNumber = "";
-
-  for(let i = numberCard.length-1 ; i >= 0; i--){
+//Invertir Números de la tarjeta
+  for(let i= numberCard.length-1 ; i >= 0; i--){
     invertedNumber = invertedNumber + numberCard[i];
     }
+    //Convertir a array y a números
     const newArray = Array.from(invertedNumber).map(Number);
-    console.log(newArray)
-
+    //console.log("Nros invertidos",newArray)
+    //Multiplicar por 2 las posiciones pares
     let numberCardList = [];
 
     for(let i=0; i < newArray.length; i++){
@@ -31,14 +32,53 @@ function getCreditCardNumber() {
         numberCardList.push(newArray[i]*1);
       }
     }
-    console.log("Pares multiplicados por 2", numberCardList)
+    //console.log("Pares multiplicados por 2", numberCardList)
 
+    //Sumar los dígitos de los nros. mayores que 9 de las posiciones pares 
+    let numberCardList2 = [];
 
-}
-    
+    for(let i=0; i < numberCardList.length; i++){
+      if(numberCardList[i]>=10){
+        numberCardList2.push((numberCardList[i]-10)+1);
+      }else{
+        numberCardList2.push(numberCardList[i]*1)
+      }
+    }
+    //console.log("Sumar dígitos de nros mayores que 10",numberCardList2);
 
+    //Sumar todos los números
+    let numberCardSum = numberCardList2.reduce((sum,actual)=>sum+actual,0);
+    //console.log("suma",numberCardSum)
+
+    //Validar Tarjeta de Crédito
+    let validation = false;
+    if(numberCardSum%10===0){
+        validation = true;
+      }
+}//console.log(validation);
+
+function maskify(){
   
+  let numberCard2 = document.getElementById("creditcard").value;
+  const numberCardMask = Array.from(numberCard2).map(Number);
+  console.log(numberCardMask);
+  
+  let numbers = "";
+
+  for(i=0;i<numberCardMask.length;i++){
+    if(i>11){
+      numbers = numbers + numberCardMask[i];
+    }else{
+      numbers = numbers + "#";
+    } 
+    } 
+    console.log(numbers);
+}
+
+
+
+
+    
   const button = document.getElementById("verify");
-  button.addEventListener("click",getCreditCardNumber,false);
-
-
+  //button.addEventListener("click",getCreditCardNumber);
+  button.addEventListener("click",maskify,false)
