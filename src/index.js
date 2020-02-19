@@ -3,14 +3,16 @@ import validator from './validator.js';
     console.log(validator);
 
 // Inicia la sección
-  const enter = document.getElementById("btn");
-  const startSection = document.getElementById("startpage");
-  enter.addEventListener("click",()=>{
-    startSection.classList.add("ocultar");
-  });
-  const sectionCard = document.getElementById("entercard");
-  sectionCard.classList.add("ocultar");
+const enter = document.getElementById("button1");
+const sectionCard = document.getElementById("entercard");
+sectionCard.classList.add("ocultar");
 
+const startSection = document.getElementById("startpage");
+enter.addEventListener("click",start,false);
+function start(){
+  startSection.classList.add("ocultar");
+  sectionCard.classList.add("mostrar");
+};
 // Solicitar Número de la Tarjeta
 function getCreditCardNumber() {
   let numberCard = document.getElementById("creditcard").value;
@@ -58,6 +60,7 @@ function getCreditCardNumber() {
       console.log(validation);
 }
 
+//Enmascarar los números
 function maskify(){
   
   let numberCard2 = document.getElementById("creditcard").value;
@@ -69,11 +72,26 @@ function maskify(){
       numbers = numbers + "#";
     }else{
       numbers = numbers + numberCard2[i]*1;
-    } 
+    } document.getElementById("validation").innerText = numbers;
   } 
-    console.log(numbers);
 }
 
-  const button = document.getElementById("verify");
+  const button = document.getElementById("button2");
   button.addEventListener("click",getCreditCardNumber,false);
-  button.addEventListener("click",maskify,false)
+  button.addEventListener("click",maskify,false);
+
+  const validate = document.getElementById("validation");
+  validate.classList.add("ocultar");
+ 
+  button.addEventListener("click",next,false);
+  function next(){
+    validate.classList.add("mostrar");
+    sectionCard.classList.add("ocultar");
+  }
+
+
+    
+  
+  
+
+

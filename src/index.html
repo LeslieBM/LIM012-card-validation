@@ -9,30 +9,48 @@
   <body>
      <!-- Sección Bienvenida -->
   <div class="section" id="startpage" >
-    <div class="title">Online Boutique</div>
-    <div class= "text">Visita el mejor catálogo de ropa y accesorios para dama</div>
-    <div class= "slogan">Elegancia y estilo al alcance de un click</div>
-    <button type="button" id="btn">Visítanos</button>
+    <div class="tittle">Construyendo Conciencia</div>
+    <div class= "slogan">Educación para el futuro</div>
+      <div class= "parrafo">Somos una ONG, orientada a promover 
+      el cuidado y la conciencia ambiental para la preservación
+      de nuestros recursos naturales a las nuevas generaciones. 
+      </div>
+    <div class="subtitles">
+      <div class="subtitle1">Nuestra Misión</div>
+        <div class="content1">Somos...</div>
+      <div class="subtitle1">Nuestros Valores</div>
+        <div class="content1">Comprometidos...</div>
+      <div class="subtitle1">Nuestra Visión</div>
+        <div class="content1">Ser...</div>
+    </div>
+      <div class= "change">Sé parte del cambio</div>
+    <button type="button" id="button1">Donar</button>
   </div>
         <!-- Sección de Ingreso -->
   <div class="section" id="entercard" >
-    <div class= "title">Verifica tu tarjeta</div>
+    <div class= "tittle">Verifica tu tarjeta</div>
     <div class= "enterdates">Ingresa tus datos</div>
-    <div class= "text">Nombre
-      <input type="text" class="textbox" id="textbox"/>
+    <div class= "text">Nombre :
+      <input type="text" class="textbox" id="textbox1"/>
     </div>
-    <div class= "text">Nro. de tarjeta
+    <div class= "text">Nro. de tarjeta :
       <input type="text" class= "textbox" id="creditcard" maxlength="16"/>
-      <button type="button" id="verify">Verificar</button>
     </div>
     <div>
+    <div class= "text">CVC :
+        <input type="text" class="textbox" id="textbox2"/>
+    </div>
+      <button type="button" id="button2">Verificar</button>
+    </div>
       <ul>
-        <li class="typecard"> VISA</li>
-        <li class="typecard"> MATERCARD </li>
+        <li type="radio" class="radio">VISA</li>
+        <li type="radio" class="radio">MASTERCARD</li>
+        <li type="radio" class="radio">AMERICAN EXPRESS</li>
       </ul>
       <!-- Seccion de Validación -->
-    <div class="section" id="validation">Resultado de Validación
-    </div>
+  <div class="section" id="validation">
+    <div class="tittle">Resultado de Validación</div>
+    <button type="button" id="return">Regresar</button>
   </div>
   
     <script src="index.js" type="module"></script>
