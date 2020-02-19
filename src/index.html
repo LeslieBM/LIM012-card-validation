@@ -9,7 +9,7 @@
   <body>
      <!-- Sección Bienvenida -->
   <div class="section" id="startpage" >
-    <div class="tittle">Construyendo Conciencia</div>
+    <div class="tittle">ONG Construyendo Conciencia</div>
     <div class= "slogan">Educación para el futuro</div>
       <div class= "parrafo">Somos una ONG, orientada a promover 
       el cuidado y la conciencia ambiental para la preservación
@@ -27,7 +27,7 @@
     <button type="button" id="button1">Donar</button>
   </div>
         <!-- Sección de Ingreso -->
-  <div class="section" id="entercard" >
+  <div class="section ocultar" id="entercard" >
     <div class= "tittle">Verifica tu tarjeta</div>
     <div class= "enterdates">Ingresa tus datos</div>
     <div class= "text">Nombre :
@@ -36,20 +36,21 @@
     <div class= "text">Nro. de tarjeta :
       <input type="text" class= "textbox" id="creditcard" maxlength="16"/>
     </div>
-    <div>
     <div class= "text">CVC :
         <input type="text" class="textbox" id="textbox2"/>
     </div>
+    <div> 
       <button type="button" id="button2">Verificar</button>
     </div>
-      <ul>
-        <li type="radio" class="radio">VISA</li>
-        <li type="radio" class="radio">MASTERCARD</li>
-        <li type="radio" class="radio">AMERICAN EXPRESS</li>
-      </ul>
+    <div>
+      <li type="radio" class="radio">VISA</li>
+      <li type="radio" class="radio">MASTERCARD</li>
+      <li type="radio" class="radio">AMERICAN EXPRESS</li>
+    </div>
       <!-- Seccion de Validación -->
-  <div class="section" id="validation">
+  <div class="section ocultar" id="validation">
     <div class="tittle">Resultado de Validación</div>
+    <p id="result"></p>
     <button type="button" id="return">Regresar</button>
   </div>
   

@@ -78,9 +78,7 @@
 .ocultar{
   display:none;
 }
-.mostrar{
-  display:block;
-}
+
 #return{
   padding: 10px 6px;
   margin: 2px 0px; 
