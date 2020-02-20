@@ -1,6 +1,7 @@
 .section {
   color: brown;
   background-color: lightseagreen;
+  background-image: url('https://gentequebrilla.es/2018/06/05/grandes-personajes-del-medioambiente/');
   background-position: center;
   font-family: Segoe UI;
 }
@@ -89,4 +90,11 @@
   border-color: #dc3545;
   border-radius: 8px;
   text-align: center;
+}
+.result{
+  color: blue;
+  size: 30px;
+  padding: 10px 6px;
+  margin: 2px 0px; 
+  width: 10%;
 }
