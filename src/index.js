@@ -2,35 +2,36 @@ import validator from './validator.js';
     
     console.log(validator);
 
-// Sección Inicial
-const buttonEnter = document.getElementById("button1");
+// Sección de Página Inicial
+const startSection = document.getElementById("startpage");
 const sectionEnterCard = document.getElementById("entercard");
 
-// Mostrar Sección de Ingresar Datos de tarjeta
-const startSection = document.getElementById("startpage");
+// Sección de Ingresar Datos de tarjeta
+const buttonEnter = document.getElementById("button1");
 buttonEnter.addEventListener("click",start);
 function start(){
   startSection.classList.add("ocultar");
   sectionEnterCard.classList.remove("ocultar");
 };
-
-//let numberCard2 = document.getElementById("creditcard").value;
+//Sección Resultado de Validar Tarjeta
+//let numberCard = document.getElementById("creditcard").value;
+const buttonValidar = document.getElementById("button2");
+buttonValidar.addEventListener("click",cardValidation);
 const result = document.getElementById("result");
-document.getElementById("button2").addEventListener("click",cardValidation);
 
 function cardValidation(){
-  let todo = validator.isValid(document.getElementById("creditcard").value);
-  let todo2 = validator.maskify(document.getElementById("creditcard").value);
+  let isValidResult = validator.isValid(document.getElementById("creditcard").value);
+  let maskifyResult = validator.maskify(document.getElementById("creditcard").value);
   sectionEnterCard.classList.add("ocultar");
-  let validate = document.getElementById("validation");
-  validate.classList.remove("ocultar");
-  result.innerHTML= todo + " " +todo2;
+  const validateSection = document.getElementById("validation");
+  validateSection.classList.remove("ocultar");
+  result.innerHTML= isValidResult + " " + maskifyResult;
 };
 
-
-
-
-  
-  
-
-
+const validateSection = document.getElementById("validation");
+const buttonReturn = document.getElementById("returnButton");
+buttonReturn.addEventListener("click",goBack);
+function goBack(){
+  validateSection.classList.add("ocultar");
+  sectionEnterCard.classList.remove("ocultar");
+};

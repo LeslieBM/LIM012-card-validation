@@ -6,10 +6,11 @@ validator.isValid = function(numberCard) {
   //Invertir Números de la tarjeta
   for(let i= numberCard.length-1 ; i >= 0; i--){
     invertedNumber = invertedNumber + numberCard[i];
-    }
-    //Convertir a array y a números
+  }
+    //Convertir en array y a números
     const newArray = Array.from(invertedNumber).map(Number);
     console.log("Nros invertidos",newArray)
+
     //Multiplicar por 2 las posiciones pares
     let numberCardList = [];
 
@@ -48,19 +49,17 @@ validator.isValid = function(numberCard) {
         return "tarjeta valida";
       }
       else{
-        return "tarjeta invalida"
+        return "tarjeta invalida";
       }
 };
-
-
 //Enmascarar los números
-validator.maskify = function (numberCard2){
+validator.maskify = function (numberCard){
   let numbers = "";
-  for(let i=0; i<numberCard2.length; i++){
-    if(i<= numberCard2.length - 5 ){
+  for(let i=0; i<numberCard.length; i++){
+    if(i<numberCard.length - 4 ){
       numbers = numbers + "#";
     }else{
-      numbers = numbers + numberCard2[i];
+      numbers = numbers + numberCard[i];
     }
   } 
   return numbers
