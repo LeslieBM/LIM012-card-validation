@@ -14,8 +14,9 @@ function start(){
 //Sección Resultado de Validar Tarjeta
 const buttonValidar = document.getElementById("button2");
 buttonValidar.addEventListener("click",cardValidation);
-const result = document.getElementById("result");
+const numResult = document.getElementById("numResult");
 const result1 = document.getElementById("result1");
+const thanks = document.getElementById("thanks")
 
 function cardValidation(){
   let isValidResult = validator.isValid(document.getElementById("creditcard").value);
@@ -23,12 +24,13 @@ function cardValidation(){
   sectionEnterCard.classList.add("ocultar");
   const validateSection = document.getElementById("validation");
   validateSection.classList.remove("ocultar");
-  result.innerHTML= maskifyResult;
+  numResult.innerHTML= maskifyResult;
   if(isValidResult == true){
-    result1.innerHTML = "tu tarjeta es valida";
+    result1.innerHTML = "¡Gracias por tu donación!";
+    thanks.innerHTML ="Unidos seguiremos contruyendo conciencia";
   }
   else{
-    result1.innerHTML = "tu tarjeta es invalida";
+    result1.innerHTML = "Nro. de tarjeta no válida";
   }
 }
 
