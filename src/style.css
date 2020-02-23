@@ -1,5 +1,6 @@
 .section{
   background-image: url(https://i.pinimg.com/originals/77/f0/9a/77f09a35ffe5588a1abc0bdac4799935.jpg);
+  padding-top: 15px;
   width: 100%;
   height: 100%;
   background-position: center center;
@@ -42,7 +43,8 @@ footer{
   margin-top: 18px;
   background-color: whitesmoke;
   font-family: fantasy;
-  color:darkgreen
+  color:darkgreen;
+  padding: 15px;
 }
 body{
   width: 100%;
@@ -67,7 +69,7 @@ html{
   color: darkgreen;
   position: absolute;
   left: 35%;
-  top: 22%;
+  top: 25%;
 }
 p{
   height: 5%;
@@ -76,7 +78,7 @@ p{
   text-align: justify;
   position: absolute;
   left: 30%;
-  top: 33%;
+  top: 40%;
 }
 .subtitles{
   height: 15%;
@@ -89,13 +91,12 @@ p{
   left: 30%;
   top: 50%;
 }
-}
 .change{
   font-size: 22px;
   text-align: center;
   position: absolute;
-  left: 46%;
-  top: 78%;
+  left: 42%;
+  top: 85%;
 }
 #button1{
   padding: 10px;
@@ -110,34 +111,43 @@ p{
   text-align: center;
   position: absolute;
   left: 44%;
-  top: 80%;
+  top: 95%;
+}
+#tittle1{
+  height: 8%;
+  text-align: center;
+  font-size: 50px;
+  color: brown;
+  position: relative;
+  top: 5%;
 }
 .enterdates {
   text-align: left;
   padding: 20px;
-  font-size: 40px;
+  font-size: 30px;
   position: absolute;
-  left: 40%;
-  top: 15%;
+  left: 30%;
+  top: 25%;
 }
 .text {
   text-align: left;
   padding: 20px;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 10%;
   position: relative;
   left: 30%;
+  top: 10%;
 }
 .textbox {
   width: 350px;
   margin:auto;
 }
 #creditcard{
-  width: 271px;
+  width: 309px;
   margin:auto;
 }
 #textbox2{
-  width: 150px;
+  width: 100px;
   margin:auto;
 }
 #textbox3{
