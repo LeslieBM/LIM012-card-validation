@@ -150,7 +150,7 @@ Proyecto Validación de Tarjeta de Crédito para donaciones a ONG.
 * Un resumen de 1 o 2 líneas de qué se trata tu proyecto.
 Es una página web de una ONG en donde el usuario de forma rápida, con solo ingresar su nombre y número de tarjeta de crédito, podrá realizar sus donaciones.
 * La imagen final de tu proyecto.
-![alt Imágen final](src/imagen_final_proyecto.png)
+![alt Imágen final](src/Imagen_final_proyecto.png)
 * Investigación UX:
   1. Explicar quiénes son los usuarios y los objetivos en relación con el
     producto.
