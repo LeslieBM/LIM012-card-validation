@@ -50,45 +50,45 @@ Reflexiona y luego marca los objetivos que has llegado a **entender** y
 
 ### UX
 
-* [ ] [Diseñar la aplicación pensando y entendiendo al usuario](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/intro-ux/01-el-proceso-de-diseno/00-el-proceso-de-diseno)
-* [ ] [Crear prototipos para obtener feedback e iterar](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/product-design/00-sketching/00-sketching)
-* [ ] [Aplicar los principios de diseño visual](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/product-design/01-visual-design/01-visual-design-basics)
+* [X] [Diseñar la aplicación pensando y entendiendo al usuario](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/intro-ux/01-el-proceso-de-diseno/00-el-proceso-de-diseno)
+* [X] [Crear prototipos para obtener feedback e iterar](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/product-design/00-sketching/00-sketching)
+* [X] [Aplicar los principios de diseño visual](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/product-design/01-visual-design/01-visual-design-basics)
 
 ### HTML y CSS
 
-* [ ] [Uso correcto de HTML semántico](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
-* [ ] [Uso de selectores de CSS](https://developer.mozilla.org/es/docs/Web/CSS/Selectores_CSS)
-* [ ] [Construir tu aplicación respetando el diseño realizado](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/css/01-css/02-boxmodel-and-display) (maquetación).
+* [X] [Uso correcto de HTML semántico](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
+* [X] [Uso de selectores de CSS](https://developer.mozilla.org/es/docs/Web/CSS/Selectores_CSS)
+* [X] [Construir tu aplicación respetando el diseño realizado](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/css/01-css/02-boxmodel-and-display) (maquetación).
 
 ### DOM
 
-* [ ] [Uso de selectores de nodos del DOM](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/browser/02-dom/03-1-dom-methods-selection)
-* [ ] [Manejo de eventos del DOM](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/browser/02-dom/04-events)
+* [X] [Uso de selectores de nodos del DOM](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/browser/02-dom/03-1-dom-methods-selection)
+* [X] [Manejo de eventos del DOM](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/browser/02-dom/04-events)
 * [ ] [Manipulación dinámica del DOM](https://developer.mozilla.org/es/docs/Referencia_DOM_de_Gecko/Introducci%C3%B3n)
 
 ### Javascript
 
-* [ ] [Manipulación de strings](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/javascript/06-strings/01-strings)
-* [ ] [Uso de condicionales](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/javascript/02-flow-control/01-conditionals-and-loops)
-* [ ] [Uso de bucles](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/javascript/02-flow-control/02-loops)
-* [ ] [Uso de funciones](https://lms.laboratoria.la/cohorts/lim-2019-09-bc-core-lim011/courses/javascript/02-flow-control/03-functions)
+* [X] [Manipulación de strings](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/javascript/06-strings/01-strings)
+* [X] [Uso de condicionales](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/javascript/02-flow-control/01-conditionals-and-loops)
+* [X] [Uso de bucles](https://lms.laboratoria.la/cohorts/lim-2020-01-bc-core-lim012/courses/javascript/02-flow-control/02-loops)
+* [X] [Uso de funciones](https://lms.laboratoria.la/cohorts/lim-2019-09-bc-core-lim011/courses/javascript/02-flow-control/03-functions)
 * [ ] [Datos atómicos y estructurados](https://www.todojs.com/tipos-datos-javascript-es6/)
-* [ ] Utilizar ES Modules (`import` | `export`).
+* [X] Utilizar ES Modules (`import` | `export`).
 
 ### Testing
 
-* [ ] [Testeo de tus funciones](https://jestjs.io/docs/es-ES/getting-started)
+* [X] [Testeo de tus funciones](https://jestjs.io/docs/es-ES/getting-started)
 
 ### Git y GitHub
 
-* [ ] [Comandos de git](https://lms.laboratoria.la/cohorts/lim-2019-09-bc-core-lim011/courses/scm/01-git/04-commands)
+* [X] [Comandos de git](https://lms.laboratoria.la/cohorts/lim-2019-09-bc-core-lim011/courses/scm/01-git/04-commands)
   (`add` | `commit` | `pull` | `status` | `push`).
-* [ ] [Manejo de repositorios de GitHub](https://lms.laboratoria.la/cohorts/lim-2019-09-bc-core-lim011/courses/scm/02-github/01-github)  (`clone` | `fork` | `gh-pages`).
+* [X] [Manejo de repositorios de GitHub](https://lms.laboratoria.la/cohorts/lim-2019-09-bc-core-lim011/courses/scm/02-github/01-github)  (`clone` | `fork` | `gh-pages`).
 
 ### Buenas prácticas de desarrollo
 
-* [ ] Organizar y dividir el código en módulos (Modularización).
-* [ ] Uso de identificadores descriptivos (Nomenclatura | Semántica).
+* [X] Organizar y dividir el código en módulos (Modularización).
+* [X] Uso de identificadores descriptivos (Nomenclatura | Semántica).
 * [ ] Uso de linter para seguir buenas prácticas (ESLINT).
 
 ## 4. Consideraciones generales
@@ -146,16 +146,27 @@ Estos puntos los presentarás en el `README.md`.
 Debe contener lo siguiente:
 
 * Un título con el nombre de tu proyecto.
+Proyecto Validación de Tarjeta de Crédito para donaciones a ONG.
 * Un resumen de 1 o 2 líneas de qué se trata tu proyecto.
+Es una página web de una ONG en donde el usuario de forma rápida, con solo ingresar su nombre y número de tarjeta de crédito, podrá realizar sus donaciones.
 * La imagen final de tu proyecto.
+![alt Imágen final](src/imagen_final_proyecto.png)
 * Investigación UX:
   1. Explicar quiénes son los usuarios y los objetivos en relación con el
     producto.
+    Los usuarios son personas que buscan contribuir con sus donaciones a la preservación del medio ambiente, el objetivo es que el usuario pueda realizar su donación de forma rápida y práctica, con solo la validación del número de su tarjeta de crédito.
   2. Explicar cómo el producto soluciona los problemas/necesidades de dichos
     usuarios.
+    Actualmente las personas requieren emplear el menor tiempo posible para realizar sus actividades, en este sentido las organizaciones sin fines de lucro requieren brindar la mayor facilidad para la captación de recursos económicos, es por ello que mediante esta aplicación el usuario de una forma práctica y rápida con solo validar su nro. de tarjeta de crédito podrá realizar su donación.
   3. Luego colocarás la foto de tu primer prototipo en papel.
+  ![alt Prototipo de Baja Fidelidad](src/Prototipo_baja_fidelidad.jpg)
   4. Agregar un resumen del feedback recibido indicando las mejoras a realizar.
+Decidí que orientaría mi proyecto a la creación de una página web de una organización sin fines de lucro, elaboré mi prototipo primero en papel como el que figura en la foto anterior, el feedback que recibí de las compañeras fueron los siguientes puntos:
+  - Al tratarse de una pagina web tendría que colocar un logo y enlaces en la parte de mi header que inicialmente no había considerado.
+  - Mi idea era colocar botones para la selección de la tarjeta de crédito, con las recomendaciones entendí que no era relevante que el usuario seleccione el tipo de tarjeta, ya que ello se puede identificar con los primeros dígitos de la tarjeta de crédito que ingresa.
+  - Inicialmente pensé en solicitar tambien el CVC y fecha de caducidad de la tarjeta, sin embargo con el feedback llegué a la conclusión que el valor agregado de mi proyecto se orientaría precisamente a que solo con la validación del nro. de tarjeta de crédito pueda realizarse la donación.
   5. Imagen del prototipo final.
+  [alt Prototipo final](https://balsamiq.cloud/snyfel5/pucvyf0/r2278)
 
 #### Visualmente (HTML y CSS)
 
