@@ -150,7 +150,10 @@ Proyecto Validación de Tarjeta de Crédito para donaciones a ONG.
 * Un resumen de 1 o 2 líneas de qué se trata tu proyecto.
 Es una página web de una ONG en donde el usuario de forma rápida, con solo ingresar su nombre y número de tarjeta de crédito, podrá realizar sus donaciones.
 * La imagen final de tu proyecto.
-![alt Imágen final](src/Imagen_final_proyecto.png)
+![alt Imágen final](imagenes/seccion_inicio.png)
+![alt Imágen final](imagenes/seccion_ingreso_tarjeta.png)
+![alt Imágen final](imagenes/tarjeta_valida.png)
+![alt Imágen final](imagenes/tarjeta_invalida.png)
 * Investigación UX:
   1. Explicar quiénes son los usuarios y los objetivos en relación con el
     producto.
@@ -159,14 +162,17 @@ Es una página web de una ONG en donde el usuario de forma rápida, con solo ing
     usuarios.
     Actualmente las personas requieren emplear el menor tiempo posible para realizar sus actividades, en este sentido las organizaciones sin fines de lucro requieren brindar la mayor facilidad para la captación de recursos económicos, es por ello que mediante esta aplicación el usuario de una forma práctica y rápida con solo validar su nro. de tarjeta de crédito podrá realizar su donación.
   3. Luego colocarás la foto de tu primer prototipo en papel.
-  ![alt Prototipo de Baja Fidelidad](src/Prototipo_baja_fidelidad.jpg)
+  ![alt Prototipo de Baja Fidelidad](imagenes/Prototipo_baja_fidelidad.jpg)
   4. Agregar un resumen del feedback recibido indicando las mejoras a realizar.
 Decidí que orientaría mi proyecto a la creación de una página web de una organización sin fines de lucro, elaboré mi prototipo primero en papel como el que figura en la foto anterior, el feedback que recibí de las compañeras fueron los siguientes puntos:
   - Al tratarse de una pagina web tendría que colocar un logo y enlaces en la parte de mi header que inicialmente no había considerado.
   - Mi idea era colocar botones para la selección de la tarjeta de crédito, con las recomendaciones entendí que no era relevante que el usuario seleccione el tipo de tarjeta, ya que ello se puede identificar con los primeros dígitos de la tarjeta de crédito que ingresa.
   - Inicialmente pensé en solicitar tambien el CVC y fecha de caducidad de la tarjeta, sin embargo con el feedback llegué a la conclusión que el valor agregado de mi proyecto se orientaría precisamente a que solo con la validación del nro. de tarjeta de crédito pueda realizarse la donación.
   5. Imagen del prototipo final.
-  [alt Prototipo final](https://balsamiq.cloud/snyfel5/pucvyf0/r2278)
+  ![alt Prototipo final](imagenes/prototipo_seccion_inicio.png)
+  ![alt Prototipo final](imagenes/prototipo_seccion_ingreso_tarjeta.png)
+  ![alt Prototipo final](imagenes/prototipo_tarjeta_valida.png)
+  ![alt Prototipo final](imagenes/prototipo_tarjeta_invalida.png)
 
 #### Visualmente (HTML y CSS)
 
