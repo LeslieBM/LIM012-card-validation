@@ -26,11 +26,12 @@ function cardValidation(){
   validateSection.classList.remove("ocultar");
   numResult.innerHTML= maskifyResult;
   if(isValidResult == true){
-    result1.innerHTML = "¡Gracias por tu donación!";
-    thanks.innerHTML ="Unidos seguiremos contruyendo conciencia";
+    result1.innerHTML = "Es válida";
+    thanks.innerHTML = "¡Gracias por tu donación!";
   }
   else{
-    result1.innerHTML = "Nro. de tarjeta no válida";
+    result1.innerHTML = "No es válida";
+    thanks.innerHTML = "Vuelve a ingresar tu número de tarjeta de crédito";
   }
 }
 

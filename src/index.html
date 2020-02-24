@@ -5,10 +5,12 @@
     <title>Proyecto Tarjeta de Crédito</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="font.css"/>
   </head>
   <body>
     <header>
-      <img src="imagen3.png" alt=""/>
+      <div class="organization">ONG Construyendo Conciencia</div>
+      <img class="logo" src="logo.png" alt=""/>
       <nav>
         <ul>
           <li><a href="">Home</a></li>
@@ -16,58 +18,58 @@
           <li><a href="">Nuestros programas</a></li>
         </ul>
       </nav>
+      <div class="social">
+          <li><b href="" class="icon icon-facebook" target="_blank"></b></li>
+          <li><b href="" class="icon icon-twitter" target="_blank"></b></li>
+          <li><b href="" class="icon icon-youtube" target="_blank"></b></li>
+          <li><b href="" class="icon icon-instagram" target="_blank"></b></li>
+      </div>
     </header>
        <!-- Sección Bienvenida -->
   <div class="section" id="startpage">
-    <h1 class="tittle">ONG Construyendo Conciencia</h1>
+    <h1 class="title">ONG Construyendo Conciencia</h1>
     <h2 class= "slogan">Educación para el futuro</h2>
       <p class= "parrafo">Somos una ONG, orientada a promover 
       el cuidado y la conciencia ambiental para la preservación
-      de nuestros recursos naturales a las nuevas generaciones.<br></br>
+      de nuestros recursos naturales a las nuevas generaciones.<br>
       Con tu apoyo contribuimos a la conservación 
       y manejo sostenible de los recursos naturales y del 
-      medio ambiente desde la educación a travez de programas como:<br></br>
+      medio ambiente desde la educación a travez de programas como:
       Eduación amigable, programas de concientización, campañas lúdicas 
       de medio ambiente, proyectos de ciencia, entre otros.
       </p>
-      <div class= "change">¡Sé parte del cambio!</div>
-    <button type="button" id="button1">Dona Hoy</button>
+      <div class= "change">¡Donar tomará unos minutos, pero tu aporte perdurará por siempre!</div>
+    <button type="button" class="button" id="button1">¡Dona ya!</button>
   </div>
         <!-- Sección de Ingreso -->
   <div class="section ocultar" id="entercard" >
-    <div class= "tittle" id=tittle1>Realiza tu aporte</div>
-    <div class= "enterdates">Ingresa tus datos</div>
+    <div class= "title" id= "title1">Realiza tu aporte</div>
     <div class= "text">Nombre :
       <input type="text" class="textbox" id="textbox1" placeholder="Ingresa tu nombre y apellido"/>
     </div>
     <div class= "text">Nro. de tarjeta :
-      <input type="text" class= "textbox" id="creditcard" maxlength="16" placeholder="Ingresa solo números"/>
+      <input type="text" class= "textbox" id="creditcard" maxlength="16" placeholder="Ingresa solo números" />
     </div>
-    <div class= "text">CVC :
-        <input type="text" class="textbox" id="textbox2" placeholder="tres dígitos"/>
-    </div>
-    <div class="text">
-      <input type="text" class="textbox" id="textbox3" placeholder="05/2025"/>
-    </div>
-    <div class="text">Ingresa tu donación
-      <input type="text" class="textbox" id="textbox4" placeholder="Aporte en soles"/>
+    <div class="text" id="donation">Monto a donar :
+      <input type="number" class="textbox" id="textbox4" placeholder="Aporte en soles"/>
     </div>
     <div> 
-      <button type="button" id="button2">Donar</button>
+      <button type="button" class="button" id="button2">Donar</button>
     </div>
     <div>
-      <li type="radio" class="radio">VISA</li>
-      <li type="radio" class="radio">MASTERCARD</li>
-      <li type="radio" class="radio">AMERICAN EXPRESS</li>
+      <img class="visa" src="VISA.jpg"/>
+      <img clas="mastercard" src="MASTERCARD2.jpg"/>
+      <img class= "amex" src="AMEX.png"/>
     </div>
   </div>
       <!-- Seccion de Validación -->
   <div class="section ocultar" id="validation">
-    <div class="tittle" id="tittle3">Resultado de Validación</div>
+    <div class="title" id="title2">Resultado de Donación</div>
+      <div class="sentence">La tarjeta número : </div>
       <div class= "numResult" id="numResult"></div>
       <div class= "result1" id="result1"></div>
-      <div class= "thanks ocultar" id="thanks"></div>
-    <button type="button" id="returnButton">Regresar</button>
+      <div class= "thanks" id="thanks"></div>
+    <button type="button" class="button" id="returnButton">Regresar</button>
   </div>
     <script src="index.js" type="module"></script>
   </body>

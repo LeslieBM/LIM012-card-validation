@@ -34,9 +34,9 @@ validator.isValid = function(numberCard) {
 
     //Validar Tarjeta de Crédito
   let validation = false;
-    if(numberCardSum%10===0){
-        validation = true;
-      }
+    if(numberCardSum%10==0){
+      validation = true;
+    }
       if(validation==true){
         return true ;
       }
