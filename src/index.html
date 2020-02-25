@@ -44,18 +44,15 @@
         <!-- Sección de Ingreso -->
   <div class="section ocultar" id="entercard" >
     <div class= "title" id= "title1">Realiza tu aporte</div>
-    <div class= "text">Nombre :
-      <input type="text" class="textbox" id="textbox1" placeholder="Ingresa tu nombre y apellido"/>
-    </div>
-    <div class= "text">Nro. de tarjeta :
-      <input type="text" class= "textbox" id="creditcard" maxlength="16" placeholder="Ingresa solo números" />
-    </div>
-    <div class="text" id="donation">Monto a donar :
-      <input type="number" class="textbox" id="textbox4" placeholder="Aporte en soles"/>
-    </div>
-    <div> 
-      <button type="button" class="button" id="button2">Donar</button>
-    </div>
+    <form>
+      <label for= "name">Nombre :</label>
+      <input type="text" class="textbox" id="name" placeholder="Ingresa tu nombre y apellido" name="name" required>
+      <label for= "creditcard">Nro. de tarjeta :</label>
+      <input type="text" class= "textbox" id="creditcard" maxlength="16" placeholder="Ingresa solo números" name="creditcard" required>
+      <label for="textbox4" id="donation">Monto a donar :</label>
+      <input type="number" class="textbox" id="textbox4" placeholder="Aporte en soles" name="textbox4" required>
+      <button type="submit" class="button" id="button2">Donar</button>
+    </form>
     <div>
       <img class="visa" src="VISA.jpg"/>
       <img clas="mastercard" src="MASTERCARD2.jpg"/>

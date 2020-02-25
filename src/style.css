@@ -1,16 +1,15 @@
-.section{
+html{
   background-image: url(https://i.pinimg.com/originals/77/f0/9a/77f09a35ffe5588a1abc0bdac4799935.jpg);
-  padding-top: 10px;
   width: 100%;
   height: 100%;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
-  background-color: whitesmoke;
+  background-size: cover; /*tamaño de las imágenes de fondo*/
 }
 header{
   background-color: lightgray;
+  margin-top: 0.5%;
 }
 .social{
   position: fixed;
@@ -25,7 +24,7 @@ header{
 .icon{
   color:white;
   text-decoration: none;
-  padding: .7rem;
+  padding: 0.7rem;
   transition: all .5s;
 }
 .icon-facebook{
@@ -75,15 +74,6 @@ a{
   text-decoration: none;
   font-family: fantasy;
   color:darkgreen
-}
-footer{
-  width: 100%;
-  text-align: center;
-  margin-top: 5px;
-  background-color: lightgray;
-  font-family: fantasy;
-  color:darkgreen;
-  padding: 15px;
 }
 body{
   width: 100%;
@@ -182,7 +172,7 @@ p{
   font-family: calibri;
   font-weight: bold;
 }
-#textbox1{
+#name{
   width: 360px;
   margin:auto;
 }
@@ -194,10 +184,6 @@ p{
   position: relative;
   left: 35%;
   top: 30%;
-}
-#textbox4{
-  width: 180px;
-  margin:auto;
 }
 img {
   width: 80px;
@@ -245,4 +231,15 @@ img {
   font-size: 30px;
   text-align: center;
   font-weight: bold;
+}
+footer{
+  width: 100%;
+  text-align: center;
+  margin-top: 1.5%;
+  background-color: lightgray;
+  font-family: fantasy;
+  color:darkgreen;
+  padding: 10px;
+  position: relative;
+  top: 70%;
 }
