@@ -1,7 +1,7 @@
 const validator = {
 };
 // Solicitar Número de la Tarjeta
-validator.isValid = function(numberCard) {
+validator.isValid = numberCard=>{
   let invertedNumber = "";
   //Invertir Números de la tarjeta
     for(let i= numberCard.length-1 ; i >= 0; i--){
@@ -45,7 +45,7 @@ validator.isValid = function(numberCard) {
       }
 }
 //Enmascarar los números
-validator.maskify = function (numberCard){
+validator.maskify = numberCard =>{
   let numbers = "";
     for(let i=0; i<numberCard.length; i++){
       if(i<numberCard.length - 4 ){

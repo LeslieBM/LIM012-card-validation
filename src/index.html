@@ -38,19 +38,19 @@
       Eduación amigable, programas de concientización, campañas lúdicas 
       de medio ambiente, proyectos de ciencia, entre otros.
       </p>
-      <div class= "change">¡Donar tomará unos minutos, pero tu aporte perdurará por siempre!</div>
+      <div class= "motivation">¡Donar tomará unos minutos, pero tu aporte perdurará por siempre!</div>
     <button type="button" class="button" id="button1">¡Dona ya!</button>
   </div>
         <!-- Sección de Ingreso -->
   <div class="section ocultar" id="entercard" >
-    <div class= "title" id= "title1">Realiza tu aporte</div>
-    <form>
+    <div class= "title" >Realiza tu aporte</div>
+    <form id="formulario">
       <label for= "name">Nombre :</label>
-      <input type="text" class="textbox" id="name" placeholder="Ingresa tu nombre y apellido" name="name" required>
+      <input type="text" class="textbox" id="name" placeholder="Ingresa tu nombre y apellido" required/>
       <label for= "creditcard">Nro. de tarjeta :</label>
-      <input type="text" class= "textbox" id="creditcard" maxlength="16" placeholder="Ingresa solo números" name="creditcard" required>
-      <label for="textbox4" id="donation">Monto a donar :</label>
-      <input type="number" class="textbox" id="textbox4" placeholder="Aporte en soles" name="textbox4" required>
+      <input type="text" class= "textbox" id="creditcard" maxlength="16" placeholder="Ingresa solo números" required/>
+      <label for="donation">Monto a donar :</label>
+      <input type="number" class="textbox" id="donation" placeholder="Aporte en soles" required/>
       <button type="submit" class="button" id="button2">Donar</button>
     </form>
     <div>
@@ -61,7 +61,7 @@
   </div>
       <!-- Seccion de Validación -->
   <div class="section ocultar" id="validation">
-    <div class="title" id="title2">Resultado de Donación</div>
+    <div class="title">Resultado de Donación</div>
       <div class="sentence">La tarjeta número : </div>
       <div class= "numResult" id="numResult"></div>
       <div class= "result1" id="result1"></div>

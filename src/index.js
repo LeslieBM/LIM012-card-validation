@@ -4,22 +4,18 @@ import validator from './validator.js';
 const startSection = document.getElementById("startpage");
 const sectionEnterCard = document.getElementById("entercard");
 
-const form = document.querySelector("form");
-
 // Sección de Ingresar Datos de tarjeta
 const buttonEnter = document.getElementById("button1");
-buttonEnter.addEventListener("click",start);
-function start(){
+buttonEnter.addEventListener("click", () =>{
   startSection.classList.add("ocultar");
   sectionEnterCard.classList.remove("ocultar");
-}
+})
 //Sección Resultado de Validar Tarjeta
-//const buttonValidar = document.getElementById("button2");
-//buttonValidar.addEventListener("click", (event) =>{  
-  form.addEventListener("submit", (event) =>{  
+  const formulario = document.getElementById("formulario")
+  formulario.addEventListener("submit", (event) =>{  
   event.preventDefault();
-  let isValidResult = validator.isValid(document.getElementById("creditcard").value);
-  let maskifyResult = validator.maskify(document.getElementById("creditcard").value);
+  const isValidResult = validator.isValid(document.getElementById("creditcard").value);
+  const maskifyResult = validator.maskify(document.getElementById("creditcard").value);
   sectionEnterCard.classList.add("ocultar");
   document.getElementById("validation").classList.remove("ocultar");
   numResult.innerHTML= maskifyResult;
@@ -37,8 +33,7 @@ const result1 = document.getElementById("result1");
 const thanks = document.getElementById("thanks");
 const validateSection = document.getElementById("validation");
 const buttonReturn = document.getElementById("returnButton");
-buttonReturn.addEventListener("click",goBack);
-function goBack(){
+buttonReturn.addEventListener("click",()=>{
   validateSection.classList.add("ocultar");
   sectionEnterCard.classList.remove("ocultar");
-}
+})
