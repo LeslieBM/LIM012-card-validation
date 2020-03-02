@@ -5,7 +5,7 @@ html{
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover; /*tamaño de las imágenes de fondo*/
+  background-size: cover; 
 }
 header{
   background-color: lightgray;
@@ -129,7 +129,7 @@ p{
   border-radius: 8px;
   position: absolute;
   left: 46%;
-  top: 80%;
+  top: 90%;
 }
 #button2{
 position: absolute;
